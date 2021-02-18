@@ -1,0 +1,46 @@
+.message-block {
+  display: flex;
+  width: 100%;
+  flex-flow: wrap;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.message-left-column {
+ flex: 20%;
+}
+
+.message-right-column {
+  flex: 80%;
+  width: 100%;
+}
+
+.message-text {
+  width: 80%;
+  background-color: rgb(59, 142, 175);
+  color: white;
+  padding: 10px;
+  margin: 0 0 5px 0;
+}
+
+.message-name {
+  width: 100%;
+  margin: 0 10px 0 0;
+  color: rgb(143, 143, 143);
+}
+
+.message-time {
+  font-size: 12px;
+  font-style: italic;
+  color: rgb(143, 143, 143);
+}
+
+.message-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.like-button {
+  background-color: lightblue;
+}

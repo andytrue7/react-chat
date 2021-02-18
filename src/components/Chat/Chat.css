@@ -1,0 +1,10 @@
+.wrapper {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  border: 5px solid rgb(239, 223, 240);
+  margin-top: 3%;
+}
