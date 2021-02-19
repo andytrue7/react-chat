@@ -25,7 +25,7 @@ const MessageList = ({ data, onDeleted, onUpdated, onLiked }) => {
     return (
         <li key={id}>
             <Message {...messageProps}
-               onLiked={ (isLike) => onLiked(id, isLike) }
+                onLiked={ (isLike) => onLiked(id, isLike) }
             />
         </li>
     );

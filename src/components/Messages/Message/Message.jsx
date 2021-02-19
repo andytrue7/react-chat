@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Message.css';
 
-const Message = ({ userId, user, avatar, text, onDeleted, onUpdated, createdAt, onLiked }) => {
+const Message = ({ userId, user, avatar, text, onDeleted, onUpdated, createdAt, onLiked}) => {
 
   const [editMode, setEditMode] = useState(false);
   const [updatedText, setUpdatedText] = useState('');
-  const [like, setLike] = useState(false);
+   const [like, setLike] = useState(false);
 
   const deleteButton = <button onClick={ onDeleted }>Delete</button>;
 
   const onLikeHandler = () => {
       setLike(!like);
-      onLiked(like);
+       onLiked(like);
   }
 
   const createEditForm = () => {

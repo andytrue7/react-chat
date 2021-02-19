@@ -1,14 +1,11 @@
-const getResource = async () => {
-  const url = 'https://edikdolynskyi.github.io/react_sources/messages.json';
-  const res = await fetch(url);
+import { combineReducers, createStore } from 'redux';
+import messageReducer from '../containers/Chat/reducers';
 
-  if (!res.ok) {
-    throw new Error(`Could not fetch ${url} received status ${res.status}`);
-  }
+let reducers = combineReducers({
+    messages: messageReducer
+});
 
-  return res.json();
-}
+let store = createStore(reducers);
 
-export default getResource;
-
+export default store;
 
